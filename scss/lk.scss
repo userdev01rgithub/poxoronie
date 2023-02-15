@@ -16,9 +16,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    max-width: 1440px;
     margin: 0 auto;
-    background: #1D1A1A;
     min-height: 100%;
     height: 100%;   
 }
@@ -26,32 +24,266 @@ body{
     // display: grid;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.modal {
-    max-width: 846px;
+.nav{
+    // width: 25%;
+    background-color: #979797;
+    padding: 30px;
+    &__account {
+        margin-top: 25px;
+        > img {
+            display:block;
+            margin:auto;
+        }  
+        > h4 {
+            margin-left: 30px;
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+    }
+    &__element  {
+        > ul > li {
+            list-style-type: none;
+            display: flex;
+            padding-top: 10px;
+            > img {
+                margin-right: 20px;
+                width: 31px;
+                height: 31px;
+            }
+            > p > a {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+
+                color: #000000;
+            }
+        }
+        > ul {
+            padding-top: 30px;
+            width: fit-content;
+            display: block;
+            margin: auto;
+            
+        }
+    }
+    &__active > a {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration-line: underline;
+
+        color: #000000;
+    }
+    &__logo{
+        margin-top: 400px;
+    }
+}
+main{
     width: 100%;
-    max-height: 477px;
-    height: 100%;
-    background: #979797;
-    &__title{
-        margin-top: 130px;
+    padding: 30px;
+    &__button{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
-        line-height: 32px;
-        text-align: center;
-        color: #000000;
+        line-height: 29px;
+        color: #0E3981;
     }
-    &__text{
+max-width: 1440px;
+}
+.main__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-left: 20px;
+}
+.angry-grid {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+ }
+   
+ #item-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    padding: 20px;
+ }
+ #item-1 {
+ 
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    padding: 20px;
+    
+ }
+ #item-2 {
+ 
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    padding: 20px;
+
+ }
+ .angry__input{
+    width: 206px;
+    background: #EFEFEF;
+    border: 2px solid #0E3981;
+    box-shadow: 0px 0px 400px #D9D9D9, 0px 0px 432px #D9D9D9, 0px 0px 252px #D9D9D9, 0px 0px 126px #D9D9D9, 0px 0px 36px #D9D9D9, 0px 0px 18px #D9D9D9;
+    border-radius: 5px;
+    height: 51px;
+    padding-left: 20px;
+    margin-bottom: 39px;
+ }
+ .angry__input::placeholder{
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.7;
+ }
+ .main{
+    &__submit{
+        display: flex;
+        justify-content: right;
+    }
+    &__line {
+        display: flex;
+        justify-content: right;
+    }
+ }
+ .button{
+    width: 189px;
+    height: 51px;
+    background: #1B68B2;
+    border-radius: 33px;
+    border: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #FFFFFF;
+
+
+ }
+ table {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 467px;
+    border-collapse: collapse;
+    border: 0.9px solid #1B68B2;
+    tr > th {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: center;
-        margin-top: 130px;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #000000;
+        padding: 10px;
+    border: 0.9px solid #1B68B2;
+        
     }
-}
+ }
+ .price{
+    &__pascal{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(27, 104, 178, 0.15);
+        border-radius: 5px;
+        width: 263.08px;
+        // height: 252.88px;
+        
+    }
+    &__title{
+        background: #1B68B2;
+        border-radius: 5px;
+        width: 263px;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        h3{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        }
+    }
+    &__special{
+        background: #1B68B2;
+        border-radius: 5px;
+        height: 14px;
+        width: 14px;
+        display: list-item;
+        margin-right: 15px;
+    }
+    &__elem{
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+    }
+    &__list{
+        padding: 15px;
+        li {
+            list-style-type: none;
+            display: flex;
+        }
+    }
+    &__card{
+        button{
+            width: 263.08px;
+            height: 64.64px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1B68B2;
+            border: 1px solid #1B68B2;
+            border-radius: 5px;
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    &__setka{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+ }
