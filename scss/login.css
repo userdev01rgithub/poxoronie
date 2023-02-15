@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.125;
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  width: var(--width);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #1D1A1A;
+  min-height: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.nav__link > p > a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+.form__element {
+  max-width: 411px;
+  width: 100%;
+  max-height: 350px;
+  height: 100%;
+  background: #979797;
+}
+.form__select {
+  display: flex;
+  padding-top: 6px;
+  padding-right: 15px;
+}
+.form__select > p {
+  padding-left: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.form__select > img {
+  height: 16px;
+  width: 16px;
+}
+.form__select > input {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.form__title {
+  width: 100%;
+  height: 58px;
+  background-color: #1B68B2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__title > h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.form__input {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+  height: 30px;
+  width: 350px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form__input-ci {
+  margin-top: 47px;
+}
+.form__input > input {
+  background: #FFFFFF;
+  border: none;
+}
+.form__button {
+  width: 240px;
+  height: 48px;
+  background: #1B68B2;
+  border-radius: 5px;
+  border-color: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  border: none;
+}
+.form__night-button {
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+.form__night-button-ci {
+  margin-top: 30px;
+}
+.form__values {
+  text-align: center;
+  margin-top: 11px;
+}
+
+input::-moz-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.input__code {
+  background: #D9D9D9;
+  border-radius: 8px;
+  height: 42px;
+  width: 340px;
+  padding-left: 20px;
+}
+
+.input__code::-moz-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+  padding-left: 20px;
+  left: 20px;
+}
+
+.input__code::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+  padding-left: 20px;
+  left: 20px;
+}/*# sourceMappingURL=login.css.map */
